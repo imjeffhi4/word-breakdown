@@ -115,4 +115,4 @@ With a definition sourced from [Wiktionary](https://en.wiktionary.org/wiki/ultra
 }
 ```
 
-Results are generally better when given a definition since that gives the model a good initialization point.  Though, depending on the word, it may not matter too much either way.
+Results are generally better when the user gives the model an initial definition. This is mostly due to it giving the model a good initialization point. Though, depending on the word, it may not matter too much either way. 
