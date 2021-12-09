@@ -23,7 +23,7 @@ docker run -p 8000:8000 word_breakdown
 
 # Using the API
 
-To use the API, make a POST request to the URL "[http://127.0.0.1:8000/](http://127.0.0.1:8000/)". It accepts the word and optionally a definition for that word. If the definition is given, the model will attempt to relate subsequent morpheme definitions to it. If a definition is not given for the initial word, it'll autoregressively attempt to generate one. (quality will vary). An example requests may look like the following: 
+To use the API, make a POST request to the URL "[http://127.0.0.1:8000/](http://127.0.0.1:8000/)". It accepts the word and optionally a definition for that word. If the user gives the model an initial definition, the model will attempt to relate subsequent morpheme definitions to it. If an initial definition is not given for the initial word, it'll autoregressively try to generate one. (quality will vary). An example request may look like the following:
 
 ```python
 word = "ultraviolet"
