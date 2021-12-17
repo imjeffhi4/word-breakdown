@@ -55,8 +55,8 @@ def to_dict(generated_txt):
     return {
         "Word": re.findall('<\|startoftext\|> (.+?)(?= \w )', generated_txt)[0].strip().replace(' ', ''),
         "Definition": re.findall("<DEF>(.+?)(?=<SYLLABLES>)", generated_txt)[0].strip(),
-        "Syllables": re.findall("<SYLLABLES> (.+?)(?=<MORPH>)", generated_txt)[0].strip(),
-        "Morpheme": list(parse_morphemes(re.findall("(<MORPH>.+?)(?=<\|endoftext\|>)", generated_txt)[0].strip()))
+        "Syllables": re.findall("<SYLLABLES> (.+?)(?=<MORPH>)", generated_txt)[0].strip().split(),
+        "Morphemes": list(parse_morphemes(re.findall("(<MORPH>.+?)(?=<\|endoftext\|>)", generated_txt)[0].strip()))
     }
 
 
