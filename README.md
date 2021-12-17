@@ -41,8 +41,14 @@ For the word "ultraviolet" without an initial definition:
 {
   "Word": "ultraviolet",
   "Definition": "Extremely visible.",
-  "Syllables": "ul tra vi o let",
-  "Morpheme": [
+  "Syllables": [
+    "ul",
+    "tra",
+    "vi",
+    "o",
+    "let"
+  ],
+  "Morphemes": [
     {
       "Morpheme": "ultra-",
       "Definition": "Excessively, to an extreme, as in ultramicroscopic, ultra-careful.",
@@ -81,8 +87,14 @@ With a definition sourced from [Wiktionary](https://en.wiktionary.org/wiki/ultra
 {
   "Word": "ultraviolet",
   "Definition": "of electromagnetic radiation beyond (higher in frequency than) light visible to the human eye; radiation with wavelengths from 380 nanometre - 10 nanometre",
-  "Syllables": "ul tra vi o let",
-  "Morpheme": [
+  "Syllables": [
+    "ul",
+    "tra",
+    "vi",
+    "o",
+    "let"
+  ],
+  "Morphemes": [
     {
       "Morpheme": "ultra-",
       "Definition": "Beyond, outside of, as in ultrasonic.",
