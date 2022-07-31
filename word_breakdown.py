@@ -7,7 +7,7 @@ import torch
 
 app = FastAPI()
 
-device = 0 if torch.cuda.is_available() else -1
+device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 morph_path = './Model'
 morph_tokenizer = AutoTokenizer.from_pretrained(morph_path)
 morph_model = AutoModelForCausalLM.from_pretrained(morph_path)
