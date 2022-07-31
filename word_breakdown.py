@@ -11,7 +11,7 @@ device = 0 if torch.cuda.is_available() else -1
 morph_path = './Model'
 morph_tokenizer = AutoTokenizer.from_pretrained(morph_path)
 morph_model = AutoModelForCausalLM.from_pretrained(morph_path).to(device)
-breakdown_pipe = pipeline('text-generation', model=morph_model, tokenizer=morph_tokenizer, pipeline_class=WordBreakdownPipeline, device=0)
+breakdown_pipe = pipeline('text-generation', model=morph_model, tokenizer=morph_tokenizer, pipeline_class=WordBreakdownPipeline, device=device)
 
 class UserInput(BaseModel):
     word: str
